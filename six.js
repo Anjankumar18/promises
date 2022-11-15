@@ -1,17 +1,15 @@
 
-// function hello(){
-//     return "hello";
-// }
+function hello(){
+    return "hello";
+}
 
 const p = new Promise((res,rej) => {   
-    res(function hello(){
-        return "hello";
-    });
+    res("!");
     rej("hi");  
 });
 
 p.then((res) => {
-    console.log(res);
+    console.log(hello()+res);
 }).catch((rej) => {
     console.log(rej);
 })

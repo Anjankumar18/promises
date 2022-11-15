@@ -1,4 +1,4 @@
-var num=11;
+var num=10;
 
 function check(num){
     if (num < 10) {
